@@ -25,7 +25,9 @@ button.onclick = addItem;
  * Your task will be to do the same, but with the requirements specified in the TODO statement.
  */
 function addItem() {
-   list.innerHTML += `<li> ${input.value} </li>`;
+    let li = document.createElement('li');
+    li.innerText = input.value;
+   list.appendChild(li);
 
    
     
